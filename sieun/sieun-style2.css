@@ -1,0 +1,47 @@
+
+
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+
+
+/*리스트 스타일 제거*/
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* 이미지와 링크 스타일 설정*/
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

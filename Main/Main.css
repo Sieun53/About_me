@@ -1,0 +1,168 @@
+body, ul, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: #111;
+    color: #999;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 170px 0 110px;
+    position: static;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 60px; /* 큰 글씨 크기 설정 */
+    margin: 0;
+}
+
+header .sub-title {
+    font-size: 16px; /* 작은 글씨 크기 설정 */
+    margin: 10px 0 0 0; /* 제목과 멘트 사이의 간격 설정 */
+}
+
+.wrapper {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 130px;
+}
+
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team-item {
+    flex-basis: 200px; /* 기본 크기 설정 */
+    flex-shrink: 0;
+    margin: 0 8px; /* 기본 간격 */
+    opacity: 0.4;
+    transition: all .5s;
+}
+
+/* 호버 시 팀 아이템 크기와 이미지 크기 증가 */
+.team-item:hover {
+    opacity: 1;
+    flex-basis: 250px; /* 호버 시 크기 증가 250 */
+    margin: 0 24px; /* 호버 시 간격 증가 */
+}
+
+/* 이미지 크기 설정 */
+.team-item img {
+    width: 200px; /* 컨테이너의 가로 크기 100%로 설정 */
+    height: 230px; /* 컨테이너의 세로 크기 100%로 설정 */
+    object-fit: cover; /* 비율 유지하며 자르기 */
+    display: block; /* 여백 제거 */
+    transition: all .5s; /* 호버 시 이미지 크기 변화에 애니메이션 추가 */
+}
+
+/* 호버 시 이미지 크기 증가 */
+.team-item:hover img {
+    width: 250px; /* 호버 시 가로 크기 100%로 설정 */
+    height: 280px; /* 호버 시 세로 크기 100%로 설정 */
+}
+
+
+.profile {
+    background-color: #222;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile:before {
+    content: ' ';
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.95) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#f2000000',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+}
+
+
+.profile-contents {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+/* 이름 */
+.profile-contents h2 {
+    font-size: 20px;
+}
+
+
+/* 포지션 */
+.profile-contents h2 span {
+    display: block;
+    font-size: 15px;
+}
+
+/* 버튼 */
+.profile-contents p {
+    font-size: 10px;
+    min-width: 140px;
+    max-height: 0;
+    overflow: hidden;
+    line-height: 1.2;
+    transition: all 1.1s;
+    opacity: 0;
+
+
+}
+
+.team-item:hover .profile-contents p {
+    opacity: 1;
+    transition-delay: .4s;
+    max-height: 6em;
+    margin-top: 0.4em;
+}
+
+
+a.button {
+    background-color: #444; 
+    color: #fff; 
+    padding: 8px 18px; /* 안쪽 여백 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    text-decoration: none; /* 밑줄 제거 */
+    display: inline-block; 
+    cursor: pointer; /* 커서 모양 변경 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    transition: all 0.3s ease; /* 부드러운 애니메이션 */
+    font-size: 14px; 
+    opacity: 0.8;
+}
+
+a.button:hover {
+    background-color: #666; 
+    color: #ddd;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 효과 강화 */
+}
+
+
+a.button:visited {
+    text-decoration: none; /* 방문 후에도 밑줄 제거 */
+    color: #fff; /* 방문 후에도 텍스트 색상 유지 */
+}

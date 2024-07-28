@@ -17,6 +17,8 @@
   * {
     font-family: "SUIT-Regular";
   }
+
+
   
   body {
     padding-top: 150px;
@@ -47,13 +49,18 @@
   
   .list-link {
     margin-left: 70px;
+    text-decoration: none; /* 밑줄 제거 */
+    transition: color 0.3s ease; /* 색상 전환 효과 추가 */
   }
   
   .list-link:hover {
-    color: black;
-    border-bottom: 2px solid black;
-
+    color: #adb4c4;
+    border-bottom: none;
   }
+
+
+
+  
   
   .btn-main {
     padding: 8px 23px;
@@ -77,7 +84,7 @@
     height: 5px;
     bottom: 0;
     left: 0;
-    background-color: #508C9B;
+    background-color: #939185;
   }
   
   .bar-ing {
@@ -88,24 +95,96 @@
     background-color: #201E43;
   }
   
-  /* 소개 섹션 스타일 */
   .intro {
-    margin: 80px 0 80px;
+    margin: 80px 0 165px;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* 세로 방향으로 배치 */
+    align-items: center; /* 중앙 정렬 */
   }
   
   .intro img {
     width: 230px;
     border-radius: 70%;
   }
+  
+  .emoji-container {
+    position: relative;
+    width: 230px;
+    height: 230px;
+  }
+  
+  .emoji {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: opacity 0.6s ease; /* 부드러운 전환 효과 */
+  }
+  
+  .emoji-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url('/sieun/img/이모지전환.jpg');
+    background-size: cover; /* 배경 이미지 크기에 맞게 조정 */
+    background-position: center; /* 배경 이미지 위치 조정 */
+    transition: opacity 0.6s ease; /* 부드러운 전환 효과 */
+    opacity: 0; /* 초기 상태에서 숨김 */
+  }
+  
+  .emoji-container:hover .emoji {
+    opacity: 0; /* 호버 시 첫 번째 이미지 숨기기 */
+  }
+  
+  .emoji-container:hover::before {
+    opacity: 1; /* 호버 시 두 번째 이미지 보이기 */
+  }
+
+  .intro_ment span {
+    position: relative;
+
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family:"SBAggroB";
+    
+  }
+  
+  .intro_ment .two_text {
+    font-family:"SBAggroB";
+    color: #000000; 
+    transition: color 0.3s ease, opacity 0.3s ease; /* 부드러운 전환 효과 */
+  }
+  
+  /* hover 상태 글씨변환 */
+  .emoji-container:hover + .intro_ment .two_text {
+    color: #6d959f;
+    opacity: 1; 
+    animation: animate 3s infinite; 
+    
+  }
+  
+  @keyframes animate {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   .intro_ment {
     text-align: center;
     font-size: 24px; 
-    margin-bottom: 150px; 
+    margin-top: 50px; /* 이모지와 간격 조절 */
     font-family: "SBAggroB";
   }
+
   
   /* About 섹션 스타일 */
   .section-about {
@@ -199,7 +278,14 @@
     display: inline-block;
     padding: 35px;
     font-size: 14px;
+    transition: transform 0.3s; /* 크기 변환 애니메이션 */
   }
+  
+  .link-sns li:hover {
+    transform: scale(1.1); /* 호버 시 요소 크기 확대 */
+  }
+
+
   
   .link-sns li a img {
     margin-bottom: 10px;

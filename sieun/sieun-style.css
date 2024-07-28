@@ -84,7 +84,7 @@
     height: 5px;
     bottom: 0;
     left: 0;
-    background-color: rgb(156, 156, 160);
+    background-color: #508C9B;
   }
   
   .bar-ing {
@@ -160,7 +160,6 @@
   
   /* hover 상태 글씨변환 */
   .emoji-container:hover + .intro_ment .two_text {
-    color: #6d959f;
     opacity: 1; 
     animation: animate 3s infinite; 
     

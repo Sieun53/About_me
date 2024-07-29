@@ -191,7 +191,7 @@
     justify-content: center;
     flex-direction: column;
     background-color: white;
-    padding: 80px 0 120px;
+    padding: 80px ;
     
   }
 
@@ -248,6 +248,38 @@
 
   }
   
+
+
+
+/* 카드 */
+
+.FILM-title {
+  text-align: center; /* 텍스트를 중앙 정렬 */
+  padding-top: 120px;   /* 위와 아래에 20px 패딩 추가, 좌우는 0 */
+}
+
+.FILM-title h2 {
+  margin: 0;       
+  font-size: 40px;   
+  
+}
+
+.film-ment{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 17px;
+}
+
+.card {
+  margin-top: 30px;
+}
+.card-title{
+  font-weight: bolder;
+}
+
+
+
+
   /* 푸터 스타일 */
   #footer {
     text-align: center;
@@ -263,7 +295,7 @@
   .box-footer {
     width: 100%;
     background-color: white;
-    padding: 170px 0 70px;
+    padding: 80px 0 70px;
   }
   
   .link-sns {

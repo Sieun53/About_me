@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Si eun Jeong</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="sieun-style.css" />
     <link rel="stylesheet" href="sieun-style2.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="src/img/favicon.png"
-    />
+
   </head>
   <body>
     <main id="app">
@@ -22,6 +20,7 @@
             <nav>
             <ul class="nav-list">
               <li><a href="#about" class="list-link">About</a></li>
+              <li><a href="#film-kodak" class="list-link">Film</a></li>
               <li><a href="#SNS" class="list-link">SNS</a></li>
               <li>
                 <a
@@ -41,8 +40,6 @@
           <div class="emoji-container">
             <img src="/sieun/img/이모지.jpg" alt="프로필 이미지" class="emoji" />
           </div>
-          
-
           <div class="intro_ment" id="intro-ment">
             <span class="animation">Hello, I'm <span class="two_text">Jeong Si-eun</span> !</span><br/>
             <br/>
@@ -58,10 +55,7 @@
           <div class="about-container">
               <div class="about-images">
                 <img src="/sieun/img/시은프로필.jpg" alt="내 사진" />
-
               </div>
-
-            
           </div>
           <div class="info-about">
             <dl class="txt-about">
@@ -86,10 +80,53 @@
                 <dd>&nbsp010-1234-5678</dd>
               </div>
             </dl>
-
           </div>
         </div>
 
+
+      <div id="film-kodak" class="FILM-title">
+        <h2>Film - Kodak</h2>
+      </div>
+
+      <div class="film-ment">
+        <p>📸 여기에는 제가 촬영한 사진들에 대한 간단한 설명과 개인적인 생각을 담고 있습니다. </br>
+        각 사진은 제 시각에서 바라본 일상적인 장면들을 담고 있으며, 다양한 감정을 표현하려고 노력했습니다. 감상해주셔서 감사합니다!</p>
+      </div>
+
+      <!-- 카드 -->
+      <div class="row g-1 my-4">
+        <div class="col">
+            <div class="card">
+              <img src="/sieun/img/카페.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">🍽️ 동명동 틸트틸트</h5>
+                    <p class="card-text">광주광역시 동구 동계로15번길 22 1층에 위치한 양식점으로 주로 파스타를 팝니다. 뇨끼와 우니 & 단새우 파스타가 대표 메뉴입니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/sieun/img/장미.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">🌹장미 담벼락</h5>
+                    <p class="card-text">5월쯤 동명동 어딘가에서 찍은 장미입니다. 밤 같아 보이지만 오후라는 사실... </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/sieun/img/나희도.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">🤺전주 나희도 집</h5>
+                    <p class="card-text">'스물다섯 스물하나'의 촬영지입니다. 주인공 나희도의 집입니다. 조금만 더 가면 희도랑 이진이가 헤어졌던 터널도 볼 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+      </section>
 
       <footer id="footer">
         <a id="SNS"></a>
@@ -114,7 +151,6 @@
                 />velog</a
               >
             </li>
-
             <li>
                 <a href="https://velog.io/@tldms1176/posts"
                   ><img
@@ -124,11 +160,14 @@
                   />instagram</a
                 >
               </li>
-
-
           </ul>
           <p>© 2024 - Si eun</p>
+        </div>
+      </footer>
 
+
+
+      
     </main>
   </body>
 </html>

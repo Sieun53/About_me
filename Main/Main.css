@@ -67,17 +67,17 @@ header .sub-title {
 
 /* 이미지 크기 설정 */
 .team-item img {
-    width: 200px; /* 컨테이너의 가로 크기 100%로 설정 */
-    height: 230px; /* 컨테이너의 세로 크기 100%로 설정 */
-    object-fit: cover; /* 비율 유지하며 자르기 */
-    display: block; /* 여백 제거 */
+    width: 200px; 
+    height: 230px; 
+    object-fit: cover; 
+    display: block;
     transition: all .5s; /* 호버 시 이미지 크기 변화에 애니메이션 추가 */
 }
 
 /* 호버 시 이미지 크기 증가 */
 .team-item:hover img {
-    width: 250px; /* 호버 시 가로 크기 100%로 설정 */
-    height: 280px; /* 호버 시 세로 크기 100%로 설정 */
+    width: 250px; 
+    height: 280px;
 }
 
 
@@ -86,6 +86,7 @@ header .sub-title {
     position: relative;
     overflow: hidden;
 }
+
 
 .profile:before {
     content: ' ';
@@ -164,5 +165,5 @@ a.button:hover {
 
 a.button:visited {
     text-decoration: none; /* 방문 후에도 밑줄 제거 */
-    color: #fff; /* 방문 후에도 텍스트 색상 유지 */
+    color: #fff;
 }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seunghee Lee</title>
+    <link rel="stylesheet" href="../css/seunghee-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Add Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 왼쪽 블록 구성 -->
+        <div class="left-block">
+            <div class="image-container">
+                <img src="../img/profile.JPEG" alt="Profile Image">
+            </div>
+
+            <h1>이승희</h1>
+            <h2>Backend Developer</h2>
+            
+            <hr>
+            
+            <!-- 정보 아이콘 -->
+            <div class="icons-texts">
+                <div class="icon-text">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>010-8903-9246</p>
+                </div>
+                
+                <div class="icon-text">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>lsh9246@gmail.com</p>
+                </div>
+                
+                <a href="https://velog.io/@leeseunghee00/posts" class="icon-link">
+                    <div class="icon-text">
+                        <i class="fa-solid fa-blog">
+                        </i>
+                        <p>Velog</p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/leeseunghee00" class="icon-link">
+                    <div class="icon-text">
+                        <i class="fa-brands fa-github">
+                        </i>
+                        <p>Github</p>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <!-- 오른쪽 블록 구성 -->
+        <div class="right-block">
+            <!-- 상단 Nav -->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="/index.html">GROUP2</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav" justify-items="center" align-items="center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about-me">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tmi">TMI</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">PROJECTS</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#my-dam">MY DAM</a>
+                        </li>
+
+                      
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+    
+            <div id="about-me" class="intro-container">
+                <h1>안녕하세요. 백엔드 개발자 <span class="name">이승희</span>입니다!</h1>
+                <p> 데이터에 깊은 관심으로 SW분야에 첫 발을 디딘 이후 꾸준히 성장단계를 밟고 있습니다.<br/>
+                    <span class="highlight">'느리더라도 꾸준히'</span> 를 모티브로 삼아 언젠가 사회에 선한 영향을 미치는 개발자가 되고 싶습니다.<br/>
+                    잘 부탁드립니다 😀<br/>
+                </p>
+            </div>
+
+            <!-- TMI -->
+            <div id="tmi" class="tmi-container">
+                <h2>TMI</h2>
+                <span>✅ 전공: 정보통신공학과</span>
+                <span>✅ MBTI: ISTJ</span>
+                <span>✅ 제일 좋았던 경험: 유럽여행 🌱</span>
+                <span>✅ 앞으로의 계획: 알고리즘 & 자바 마스터, 그리고 취업!</span>
+            </div>
+
+            <!-- 프로젝트 -->
+            <div id="projects" class="project-container">
+                <h2>PROJECTS</h2>
+                <p>📍 모든 프로젝트에서 <span class="highlight">백엔드</span>로 참여하였습니다.</p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <img src="../img/muse.png" class="card-img-top" alt="MUSE">
+                            <div class="card-body">
+                                <h3 class="card-title">MUSE</h3>
+                                <p class="card-text">2023.03 ~ 2023.11 <br/>
+                                    지속 가능한 의류 산업을 위한 커스텀 리폼 디자인 공유 플랫폼</p>
+                                <ul>
+                                    <li>Redis Pub/Sub 채택하여 실시간 채팅 서버 구축</li>
+                                    <li>JUnit5 기반 도메인별 Unit Test 36개 작성</li>
+                                    <li>Spring Security 와 JWT 를 활용한 회원가입 구현</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <img src="../img/wasabi.png" class="card-img-top" alt="Wasabi">
+                            <div class="card-body">
+                                <h3 class="card-title">Wasabi<h3>
+                                <h4>: WiSoft 사람들의 비밀노트</h4>
+                                <p class="card-text">2023.06 ~ 2024.01<br/>
+                                    국립한밭대학교 무선통신소프트웨어 연구실(WiSoft)의 기술 블로그</p>
+                                <ul>
+                                    <li>JDK 17, SpringBoot 3.1 → JDK 21, SpringBoot 3.2 버전업 진행</li>
+                                    <li>좋아요 서비스 로직 및 Unit Test + Integration Test 28개 작성</li>
+                                    <li>EC2 서버에 NGINX 적용 및 관련 스크립트 작성</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 담이 소개 -->
+            <div id="my-dam" class="puppy-container">
+                <h2>MY DAM</h2>
+                <p>저희 집 강아지, 담이를 소개합니다 🩶</p>
+
+                <div class="puppy-block">
+                    <img class="puppy-img" src="../img/dam1.jpeg">
+                    <img class="puppy-img" src="../img/dam2.jpeg">
+                    <img class="puppy-img" src="../img/dam3.jpeg">
+                    <img class="puppy-img" src="../img/dam4.jpeg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

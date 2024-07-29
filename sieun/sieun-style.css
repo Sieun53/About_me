@@ -1,12 +1,11 @@
-
-
 @font-face {
     font-family: 'SUIT-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
-/*어그로체*/
+
+/*어그로체 h2에서 쓰는*/
 @font-face {
     font-family: 'SBAggroB';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
@@ -130,7 +129,7 @@
     border-radius: 50%;
     background-image: url('/sieun/img/이모지전환.jpg');
     background-size: cover; /* 배경 이미지 크기에 맞게 조정 */
-    background-position: center; /* 배경 이미지 위치 조정 */
+    background-position: center; 
     transition: opacity 0.6s ease; /* 부드러운 전환 효과 */
     opacity: 0; /* 초기 상태에서 숨김 */
   }
@@ -243,7 +242,7 @@
   .txt-about dd {
     display: inline-block;
     font-size: 22px;
-    border-left: 4px solid #cccccc; /* 회색 테두리 설정 */
+    border-left: 4px solid #cccccc; 
     padding-left: 10px; /* 텍스트와 테두리 사이의 간격 */
 
   }
@@ -254,8 +253,8 @@
 /* 카드 */
 
 .FILM-title {
-  text-align: center; /* 텍스트를 중앙 정렬 */
-  padding-top: 120px;   /* 위와 아래에 20px 패딩 추가, 좌우는 0 */
+  text-align: center; 
+  padding-top: 120px; 
 }
 
 .FILM-title h2 {

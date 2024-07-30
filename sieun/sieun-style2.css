@@ -30,7 +30,6 @@ q {
 }
 
 
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -45,3 +44,18 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+
+.fade {
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out;
+}
+
+.fade.visible {
+  opacity: 1;
+}
+
+
+
+

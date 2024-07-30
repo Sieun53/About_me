@@ -44,6 +44,7 @@
   .nav-list {
     display: flex;
     justify-content: flex-end;
+    margin:0;
   }
   
   .list-link {
@@ -62,7 +63,7 @@
   
   
   .btn-main {
-    padding: 8px 23px;
+    padding: 7px 23px;
     border-radius: 20px;
     background-color: #201E43;
     border: 2px solid #201E43;
@@ -116,7 +117,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    transition: opacity 0.6s ease; /* 부드러운 전환 효과 */
+    transition: opacity 1s ease; /* 부드러운 전환 효과 */
   }
   
   .emoji-container::before {
@@ -130,7 +131,7 @@
     background-image: url('/sieun/img/이모지전환.jpg');
     background-size: cover; /* 배경 이미지 크기에 맞게 조정 */
     background-position: center; 
-    transition: opacity 0.6s ease; /* 부드러운 전환 효과 */
+    transition: opacity 1s ease; /* 부드러운 전환 효과 */
     opacity: 0; /* 초기 상태에서 숨김 */
   }
   
@@ -199,6 +200,7 @@
     color: #201E43;
     font-size: 40px;
     padding-top: 50px;
+    text-align: center;
   }
 
 
@@ -250,7 +252,15 @@
 
 
 
-/* 카드 */
+/* film */
+
+.section-film{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 0 140px 100px ;
+}
 
 .FILM-title {
   text-align: center; 
@@ -266,15 +276,48 @@
 .film-ment{
   padding-top: 30px;
   text-align: center;
-  font-size: 17px;
 }
 
 .card {
-  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transform: translateY(50px); /* 카드가 약간 아래쪽에 위치하도록 설정 */
+  transition: opacity 1s ease-out, transform 0.6s ease-out; /* 애니메이션 효과 추가 */
 }
+
+
+/* .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+} */
+
+
+/* visible 클래스가 추가될 때 애니메이션 적용 */
+.card.visible {
+  opacity: 1; /* 카드가 보이게 설정 */
+  transform: translateY(0); /* 카드가 원래 위치로 이동 */
+}
+
+.card-img-top {
+  height: 270px; /* 이미지의 높이를 고정 */
+  object-fit: cover; /* 이미지가 카드 안에 맞게 크롭됨 */
+}
+
+.card-body {
+  flex: 1; /* 카드 본문이 카드 내부에서 남은 공간을 차지하도록 함 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 카드 본문 내부 요소를 상하로 배치 */
+}
+
+
 .card-title{
   font-weight: bolder;
 }
+
+
 
 
 

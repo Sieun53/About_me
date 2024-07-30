@@ -10,6 +10,7 @@
 
     <link rel="stylesheet" href="sieun-style.css" />
     <link rel="stylesheet" href="sieun-style2.css" />
+    <script src="sieun.js"></script>
 
   </head>
   <body>
@@ -50,12 +51,14 @@
 
       <section class="section-about">
         <a id="about"></a>
-        <h2 class>About</h2>
-        <div class="cont-about">
+        <div class="about-header">
+          <h2>About</h2>
+        </div>
+        <div class="cont-about fade">
           <div class="about-container">
-              <div class="about-images">
-                <img src="/sieun/img/시은프로필.jpg" alt="내 사진" />
-              </div>
+            <div class="about-images">
+              <img src="/sieun/img/시은프로필.jpg" alt="내 사진" />
+            </div>
           </div>
           <div class="info-about">
             <dl class="txt-about">
@@ -82,51 +85,53 @@
             </dl>
           </div>
         </div>
-
-
-      <div id="film-kodak" class="FILM-title">
-        <h2>Film - Kodak</h2>
-      </div>
-
-      <div class="film-ment">
-        <p>📸 여기에는 제가 촬영한 사진들에 대한 간단한 설명과 개인적인 생각을 담고 있습니다. </br>
-        각 사진은 제 시각에서 바라본 일상적인 장면들을 담고 있으며, 다양한 감정을 표현하려고 노력했습니다. 감상해주셔서 감사합니다!</p>
-      </div>
-
-      <!-- 카드 -->
-      <div class="row g-1 my-4">
-        <div class="col">
-            <div class="card">
-              <img src="/sieun/img/카페.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">🍽️ 동명동 틸트틸트</h5>
-                    <p class="card-text">광주광역시 동구 동계로15번길 22 1층에 위치한 양식점으로 주로 파스타를 팝니다. 뇨끼와 우니 & 단새우 파스타가 대표 메뉴입니다.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="/sieun/img/장미.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">🌹장미 담벼락</h5>
-                    <p class="card-text">5월쯤 동명동 어딘가에서 찍은 장미입니다. 밤 같아 보이지만 오후라는 사실... </p>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card">
-                <img src="/sieun/img/나희도.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
-                <div class="card-body">
-                    <h5 class="card-title">🤺전주 나희도 집</h5>
-                    <p class="card-text">'스물다섯 스물하나'의 촬영지입니다. 주인공 나희도의 집입니다. 조금만 더 가면 희도랑 이진이가 헤어졌던 터널도 볼 수 있습니다.</p>
-                </div>
-            </div>
-        </div>
-      </div>
-
-
-
       </section>
+      
+
+    <section class ="section-film">
+          <!-- 카드 -->
+        <div id="film-kodak" class="FILM-title">
+          <h2>Film - Kodak</h2>
+        </div>
+
+        <div class="film-ment">
+          <p>📸 여기에는 제가 촬영한 사진들에 대한 간단한 설명과 개인적인 생각을 담고 있습니다. </br>
+          각 사진은 제 시각에서 바라본 일상적인 장면들을 담고 있으며, 다양한 감정을 표현하려고 노력했습니다. 감상해주셔서 감사합니다!</p>
+        </div>
+
+        <div class="row g-1 my-4">
+          <div class="col">
+              <div class="card">
+                <img src="/sieun/img/카페.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
+                  <div class="card-body">
+                      <h5 class="card-title">🍽️ 동명동 틸트틸트</h5>
+                      <p class="card-text">광주광역시 동구 동계로15번길 22 1층에 위치한 양식점으로 주로 파스타를 팝니다. 뇨끼와 우니 & 단새우 파스타가 대표 메뉴입니다.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                  <img src="/sieun/img/장미.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
+                  <div class="card-body">
+                      <h5 class="card-title">🌹장미 담벼락</h5>
+                      <p class="card-text">5월쯤 동명동 어딘가에서 찍은 장미입니다. 밤 같아 보이지만 오후라는 사실... </p>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="card">
+                  <img src="/sieun/img/나희도.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
+                  <div class="card-body">
+                      <h5 class="card-title">🤺전주 나희도 집</h5>
+                      <p class="card-text">'스물다섯 스물하나'의 촬영지입니다. 주인공 나희도의 집입니다. 조금만 더 가면 희도랑 이진이가 헤어졌던 터널도 볼 수 있습니다.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+  </section>
+
+
+
 
       <footer id="footer">
         <a id="SNS"></a>
@@ -139,8 +144,7 @@
                   class="img-github"
                   src="/sieun/img/icon-github.png"
                   alt="깃허브 주소"
-                />github</a
-              >
+                />github</a>
             </li>
             <li>
               <a href="https://velog.io/@tldms1176/posts"
@@ -148,17 +152,15 @@
                   class="img-velog"
                   src="/sieun/img/icon-velog.png"
                   alt="블로그 주소"
-                />velog</a
-              >
+                />velog</a>
             </li>
             <li>
-                <a href="https://velog.io/@tldms1176/posts"
+                <a href="#"
                   ><img
                     class="img-insta"
                     src="/sieun/img/icon-insta.png"
                     alt="인스타그램 주소"
-                  />instagram</a
-                >
+                  />instagram</a>
               </li>
           </ul>
           <p>© 2024 - Si eun</p>

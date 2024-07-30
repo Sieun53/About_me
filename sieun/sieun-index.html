@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="sieun-style.css" />
     <link rel="stylesheet" href="sieun-style2.css" />
-    <script src="sieun.js"></script>
+    <link rel="stylesheet" href="media.css" />
+
 
   </head>
   <body>
@@ -21,8 +22,9 @@
             <nav>
             <ul class="nav-list">
               <li><a href="#about" class="list-link">About</a></li>
+              <li><a href="#Skill" class="list-link">Skills</a></li>
+              <li><a href="#project" class="list-link">Project</a></li>
               <li><a href="#film-kodak" class="list-link">Film</a></li>
-              <li><a href="#SNS" class="list-link">SNS</a></li>
               <li>
                 <a
                 href="/index.html"
@@ -53,6 +55,7 @@
         <a id="about"></a>
         <div class="about-header">
           <h2>About</h2>
+          <p class="bar">------</p>
         </div>
         <div class="cont-about fade">
           <div class="about-container">
@@ -86,90 +89,163 @@
           </div>
         </div>
       </section>
+
+
+      <section class="section-skill" id="Skill">
+
+        <div class="skill-title">
+          <h2>Skills</h2>
+          <p class="bar">------</p>
+        </div>
+
+
+
+        <div class="graph-wrap active-on-visible" data-active-on-visible-callback-func-name="CircleRun">
+            <div class="circle-graph" circleProgress='60'>
+                <strong class="circle-percent">Java</strong>
+            </div>
+            <div class="circle-graph" circleProgress='30'>
+                <strong class="circle-percent">Spring</strong>
+            </div>
+            <div class="circle-graph" circleProgress='50'>
+                <strong class="circle-percent">SQL</strong>
+            </div>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+    </section>
       
 
-    <section class ="section-film">
-          <!-- 카드 -->
-        <div id="film-kodak" class="FILM-title">
+
+      <section class="section-project" id="project">
+
+        <div class="project-section-title">
+          <h2>Project</h2>
+          <p class="bar">------</p>
+        </div>
+
+
+        <ul class="project-list">
+          <li class="project-item">
+            <div class="project-card">
+              <img src="/sieun/img/프로젝트예시.jpg" alt="Project 1">
+            </div>
+            <div class="project-details">
+              <p class="project-title">Project 1</p>
+            </div>
+          </li>
+          <li class="project-item">
+            <div class="project-card">
+              <img src="/sieun/img/프로젝트예시.jpg" alt="Project 2">
+            </div>
+            <div class="project-details">
+              <p class="project-title">Project 2</p>
+            </div>
+          </li>
+          <li class="project-item">
+            <div class="project-card">
+              <img src="/sieun/img/프로젝트예시.jpg" alt="Project 3">
+            </div>
+            <div class="project-details">
+              <p class="project-title">Project 3</p>
+            </div>
+          </li>
+          <li class="project-item">
+            <div class="project-card">
+              <img src="/sieun/img/프로젝트예시.jpg" alt="Project 4">
+            </div>
+            <div class="project-details">
+              <p class="project-title">Project 4</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+        <!-- 슬라이드 -->
+      <section class ="section-film" id="film-kodak">
+
+        <div class="FILM-title">
           <h2>Film - Kodak</h2>
+          <p class="bar">------</p>
         </div>
 
         <div class="film-ment">
-          <p>📸 여기에는 제가 촬영한 사진들에 대한 간단한 설명과 개인적인 생각을 담고 있습니다. </br>
+          <p>📸 마지막으로는 저의 취미인 필름카메라로 촬영한 사진들을 한 번 담아봤습니다. </br>
           각 사진은 제 시각에서 바라본 일상적인 장면들을 담고 있으며, 다양한 감정을 표현하려고 노력했습니다. 감상해주셔서 감사합니다!</p>
         </div>
 
-        <div class="row g-1 my-4">
-          <div class="col">
-              <div class="card">
-                <img src="/sieun/img/카페.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
-                  <div class="card-body">
-                      <h5 class="card-title">🍽️ 동명동 틸트틸트</h5>
-                      <p class="card-text">광주광역시 동구 동계로15번길 22 1층에 위치한 양식점으로 주로 파스타를 팝니다. 뇨끼와 우니 & 단새우 파스타가 대표 메뉴입니다.</p>
-                  </div>
+        <div class="slide-container">
+          <div id="film-slide" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#film-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#film-slide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#film-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/sieun/img/카페.jpg" class="d-block w-100" alt="...">
               </div>
-          </div>
-          <div class="col">
-              <div class="card">
-                  <img src="/sieun/img/장미.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
-                  <div class="card-body">
-                      <h5 class="card-title">🌹장미 담벼락</h5>
-                      <p class="card-text">5월쯤 동명동 어딘가에서 찍은 장미입니다. 밤 같아 보이지만 오후라는 사실... </p>
-                  </div>
+              <div class="carousel-item">
+                <img src="/sieun/img/장미.jpg" class="d-block w-100" alt="...">
               </div>
-          </div>
-          <div class="col">
-              <div class="card">
-                  <img src="/sieun/img/나희도.jpg" class="card-img-top img-fluid" alt="..." style="height: 270px; object-fit: cover;">
-                  <div class="card-body">
-                      <h5 class="card-title">🤺전주 나희도 집</h5>
-                      <p class="card-text">'스물다섯 스물하나'의 촬영지입니다. 주인공 나희도의 집입니다. 조금만 더 가면 희도랑 이진이가 헤어졌던 터널도 볼 수 있습니다.</p>
-                  </div>
+              <div class="carousel-item">
+                <img src="/sieun/img/나희도.jpg" class="d-block w-100" alt="...">
               </div>
-          </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#film-slide" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#film-slide" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>         
         </div>
-  </section>
+      </section>
 
 
 
-
-      <footer id="footer">
-        <a id="SNS"></a>
-        <div class="box-footer">
+      <!-- 새로운 SNS 섹션 추가 -->
+      <section class="section-sns" id="SNS" >
+        <div class="sns-title">
           <h2>SNS</h2>
+          <p class="bar">------</p>
+        </div>
+        <div class="box-sns">
           <ul class="link-sns">
             <li>
-              <a href="https://github.com/Sieun53"
-                ><img
-                  class="img-github"
-                  src="/sieun/img/icon-github.png"
-                  alt="깃허브 주소"
-                />github</a>
+              <a href="https://github.com/Sieun53">
+                <img class="img-github" src="/sieun/img/icon-github.png" alt="깃허브 주소" />github
+              </a>
             </li>
             <li>
-              <a href="https://velog.io/@tldms1176/posts"
-                ><img
-                  class="img-velog"
-                  src="/sieun/img/icon-velog.png"
-                  alt="블로그 주소"
-                />velog</a>
+              <a href="https://velog.io/@tldms1176/posts">
+                <img class="img-velog" src="/sieun/img/icon-velog.png" alt="블로그 주소" />velog
+              </a>
             </li>
             <li>
-                <a href="#"
-                  ><img
-                    class="img-insta"
-                    src="/sieun/img/icon-insta.png"
-                    alt="인스타그램 주소"
-                  />instagram</a>
-              </li>
+              <a href="#">
+                <img class="img-insta" src="/sieun/img/icon-insta.png" alt="인스타그램 주소" />instagram
+              </a>
+            </li>
           </ul>
+        </div>
+      </section>
+
+      <!-- 기존의 푸터 부분 -->
+      <footer id="footer">
+        <div class="box-footer">
           <p>© 2024 - Si eun</p>
         </div>
       </footer>
 
 
 
-      
+
     </main>
+    <script src="sieun.js"></script>
   </body>
 </html>

@@ -5,4 +5,4 @@
 
 베이직 하게 만들어 봤습니다 😙
 
-https://sieunintro.netlify.app
+
